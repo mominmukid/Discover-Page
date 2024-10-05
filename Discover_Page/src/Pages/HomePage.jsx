@@ -1,10 +1,10 @@
 import React from 'react'
-import { NavBar, SideBar, MainArea } from '../components'
+import {  SideBar, MainArea } from '../components'
 
 
 function HomePage() {
   return (
-    <div className='w-full relative  text-white h-auto  bg-black'>
+    <div className='w-full flex justify-start items-start  bg-[#202222]'>
       <SideBar/>
       <MainArea/>
     </div>
