@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     element: <HomePage />,
     children: [
       {
-        path: '/top',
+        path: '',
         isactive: true,
         element: <TopPage />
       },

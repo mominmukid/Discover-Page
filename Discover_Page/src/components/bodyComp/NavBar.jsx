@@ -14,7 +14,7 @@ function NavBar() {
       id: 1,
       name: "Top",
       icon: <CiStar />,
-      path: 'top'
+      path: '/'
     },
     {
       id: 2,
@@ -50,28 +50,28 @@ function NavBar() {
 
   return (
     <>
-    <nav className='w-[100%] bg-[#191a1a] text-white p-3 sticky top-0 z-50 overflow-hidden'>
-      <ul className='flex justify-between text-sm  overflow-x-auto whitespace-nowrap hide-scrollbar '>
-        {
-          navItem.map((item) => (
-            <li key={item.id}>
-              <NavLink to={item.path}
-                className={({ isActive }) => ` flex justify-center items-center gap-1 hover:text-gray-400 font-semibold px-5 py-2.5 rounded-md
+      <nav className='w-[100%] bg-[#191a1a] text-white p-3 sticky top-0 z-50 overflow-hidden'>
+        <ul className='flex justify-between text-sm  overflow-x-auto whitespace-nowrap hide-scrollbar '>
+          {
+            navItem.map((item) => (
+              <li key={item.id}>
+                <NavLink to={item.path}
+                  className={({ isActive }) => ` flex justify-center items-center gap-1 hover:text-gray-400 font-semibold px-5 py-2.5 rounded-md
                 ${isActive ? 'bg-[#1a2b2d]' : 'bg-[#191a1a]'}
                 ${isActive ? 'text-[#1faec2]' : 'text-[#e8e8e6]'}
                 `}>
-                <span className='text-[1rem]'> {item.icon}</span> <p>{item.name}</p>
+                  <span className='text-[1rem]'> {item.icon}</span> <p>{item.name}</p>
 
-              </NavLink>
+                </NavLink>
 
 
 
-            </li>
-          ))
-        }
+              </li>
+            ))
+          }
 
-      </ul>
-    </nav>
+        </ul>
+      </nav>
 
     </>
   )

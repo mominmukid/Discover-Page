@@ -17,7 +17,7 @@ function SideBox() {
 
   return (
     // Ensure that this container is set to a height that allows for scrolling
-    <div className="sidebar hidden md:block w-[16%]  bg-[#202222] h-screen sticky top-0">
+    <div className="sidebar hidden lg:block w-[220px]  bg-[#202222] h-screen sticky top-0">
       {/* Sidebar with sticky positioning */}
       <div className={`sidebar w-[100%] h-screen  sticky top-0`}>
         {/* Sidebar Layout */}
@@ -87,7 +87,7 @@ function SideBox() {
         </div>
 
         {/* Bottom Icons */}
-        <div className='w-full flex absolute bottom-0 justify-between items-center p-2 py-3 border-t border-gray-600'>
+        <div className='w-full flex flex-wrap absolute bottom-0 justify-between items-center p-2 py-3 border-t border-gray-600'>
           <div className='w-fit flex justify-between items-center rounded-full px-2 py-1 text-[#8d9191] gap-1 mb-1 hover:bg-gray-400/10 duration-300 cursor-pointer hover:text-white'>
             <p><CiMobile4 /></p>
             <p>Download</p>

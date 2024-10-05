@@ -38,7 +38,7 @@ function AllCard({
 
   // Display error state
   if (error) {
-    return <div className="w-[100%] min-h-screen bg-[#202222] flex justify-center items-center">{error}</div>;
+    return <div className="w-[100%] min-h-screen bg-[#202222] flex justify-center items-center text-white font-semibold text-xl">{error}</div>;
   }
 
   // Display message if no data
@@ -51,7 +51,8 @@ function AllCard({
     <div className="w-full min-h-screen flex flex-col gap-2  bg-[#191a1a] flex-wrap">
       {data.map((singleData, index) => (
         singleData.title !== 'Removed' && singleData.urlToImage !== null && (
-          <Card data={singleData} key={id + index} news={news}/> // Render Card for each article unless title is 'Removed'
+          <Card data={singleData} key={id + index} news={news}
+            className={`w-[95%] md:w-full`} imageHeight={`h-[15rem]`} /> // Render Card for each article unless title is 'Removed'
         )
       ))}
     </div>

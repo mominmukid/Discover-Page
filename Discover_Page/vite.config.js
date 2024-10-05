@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
     proxy:{
-      '/api':`https://newsapi.org/v2/top-headlines?category=`
+      '/api':`https://newsapi.org`
     }
   },
   plugins: [react()],
