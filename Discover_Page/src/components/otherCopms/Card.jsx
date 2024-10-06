@@ -27,7 +27,7 @@ function Card({
                className={`  rounded-lg  flex flex-col justify-between cursor-pointer items-center h-[10%]    mt-2  shadow-md shadow-gray-400/20 bg-[#202222] ${className}`}>
 
                <div className={`w-full ${imageHeight} `} >
-                  <img src={data.urlToImage} className='w-full h-full object-cover' alt={<Loader />} />
+                  <img src={data.image} className='w-full h-full object-cover' alt={<Loader />} />
                </div>
                <div className='w-full flex flex-col   justify-start p-3'>
                   <h1 className='text-lg text-[#e8e8e6] font-bold'>{data.title}</h1>

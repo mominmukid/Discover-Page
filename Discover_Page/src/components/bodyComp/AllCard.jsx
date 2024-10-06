@@ -50,7 +50,7 @@ function AllCard({
   return (
     <div className="w-full min-h-screen flex flex-col gap-2  bg-[#191a1a] flex-wrap">
       {data.map((singleData, index) => (
-        singleData.title !== 'Removed' && singleData.urlToImage !== null && (
+        singleData.title !== 'Removed' && singleData.image !== null && (
           <Card data={singleData} key={id + index} news={news}
             className={`w-[95%] md:w-full`} imageHeight={`h-[15rem]`} /> // Render Card for each article unless title is 'Removed'
         )

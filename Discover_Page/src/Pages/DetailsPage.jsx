@@ -75,7 +75,7 @@ function DetailsPage({
 
             <div className='w-[95%] h-[60%] md:w-full bg-black mt-5 rounded-lg'>
 
-               <img src={item?.urlToImage} alt={item?.title}
+               <img src={item?.image} alt={item?.title}
                   className='w-full h-full object-cover cursor-zoom-in'
                />
             </div>
@@ -88,7 +88,7 @@ function DetailsPage({
 
             <div className='w-full px-5 py-3 flex flex-col justify-center items-start mt-5 gap-2'>
                <p className='font-bold tetx-lg'>Author: <span className='font-normal'>{item?.author}</span> </p>
-               <p className='font-bold tetx-lg'>publishedAt: <span className='font-normal'>{item?.publishedAt}</span> </p>
+               <p className='font-bold tetx-lg'>publishedAt: <span className='font-normal'>{item?.published_at}</span> </p>
                <p className='font-bold tetx-lg'>Url: <a href={item?.url} className='text-blue-500'>{item?.url}</a> </p>
             </div>
 
