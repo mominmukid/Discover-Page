@@ -16,11 +16,13 @@
 
 
 import axios from 'axios';
-// const apiKey = process.env.REACT_APP_MEDIASTACK_API_KEY;
-const API_KEY = 'b522b8d231ccacddcff31b388fe010f7';
+const apiKey = String(import.meta.env.VITE_APP_PROJECT_KEY);
+const apiurl= String(import.meta.env.VITE_APP_PROJECT_URL);
+console.log(apiKey);
+
 
 export const fetchNews = async (category) => {
-  const url = `http://api.mediastack.com/v1/news?access_key=${API_KEY}&categories=${category}&limit=100`;
+  const url = `${apiurl}/v1/news?access_key=${apiKey}&categories=${category}&limit=100`;
 
   try {
     const res = await axios.get(url);
